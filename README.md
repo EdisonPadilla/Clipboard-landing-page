@@ -41,7 +41,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [repository](https://github.com/EdisonPadilla/Clipboard-landing-page.git)
-- Live Site URL: [live site (github page)](https://your-live-site-url.com)
+- Live Site URL: [live site (github page)](https://edisonpadilla.github.io/Clipboard-landing-page/)
 
 ## My process
 
