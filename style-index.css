@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+:root {
+  /*Primary*/
+
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+
+  /*Neutral*/
+
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+  --company-data-background: hsl(201, 11%, 96%);
+  --button-ios-hover: hsl(171, 66%, 54%);
+  --button-mac-hover: hsl(233, 100%, 79%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+}
+
+main {
+  height: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+.image-size {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.title-style {
+  font-weight: 600;
+  color: var(--dark-grayish-blue, darkslategray);
+}
+
+.paragraph-text-style {
+  color: var(--grayish-blue, darkgray);
+}
+
+.header-container {
+  padding: 8rem 5% 0 5%;
+  margin-bottom: 10rem;
+  background-image: url(./images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header-logo-box {
+  margin: 0 0 4rem 0;
+}
+
+.header-paragraph,
+.keep-track-paragraph,
+.access-anywhere-paragraph1,
+.clipboard-iosmac-paragraph1 {
+  padding: 0 25%;
+}
+
+.button-style {
+  position: relative;
+  display: inline-block;
+  margin-top: 1.5rem;
+  width: 15%;
+  height: 3rem;
+  border-radius: 1.5rem;
+  border: none;
+  font-weight: 600;
+  transition-duration: 0.7s;
+}
+
+.button-style:hover {
+  cursor: pointer;
+}
+
+.button-ios {
+  background-color: var(--strong-cyan, aqua);
+  color: #fff;
+  border-bottom: 2px solid hsl(171, 66%, 34%);
+}
+
+.button-ios:hover {
+  background-color: var(--button-ios-hover, aquamarine);
+}
+
+.button-mac {
+  background-color: var(--light-blue, dodgerblue);
+  color: #fff;
+  border-bottom: 2px solid hsl(233, 100%, 59%);
+}
+
+.button-mac:hover {
+  background-color: var(--button-mac-hover, cornflowerblue);
+}
+
+.keep-track-container {
+  margin-bottom: 6rem;
+}
+
+.keep-track-content {
+  margin-top: 4rem;
+  display: flex;
+  text-align: left;
+}
+
+.search-icloud-history-container {
+  padding: 0 15% 0 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.keep-track-image-box {
+  margin: 0;
+}
+
+.access-anywhere-container {
+  padding: 0 5%;
+  margin-bottom: 10rem;
+}
+
+.access-anywhere-image-box {
+  margin: 4rem 0 5rem 0;
+  padding: 0 20%;
+}
+
+.access-anywhere-section {
+  padding: 0 0.5%;
+}
+
+.blacklists-snippets-sneak-container {
+  margin-top: 4rem;
+  display: flex;
+}
+
+.icon-box {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.icon-size {
+  height: 2rem;
+  width: auto;
+}
+
+.company-logo-container {
+  padding: 0 5%;
+  margin-bottom: 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-logo-box {
+  margin: 0;
+}
+
+.company-logo-size {
+  height: 2.5rem;
+  width: auto;
+}
+
+.clipboard-iosmac-container {
+  padding: 0 5%;
+  margin-bottom: 10rem;
+}
+
+.company-data-container {
+  padding: 2rem 5% 2rem 5%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  text-align: left;
+  background-color: var(--company-data-background, aliceblue);
+}
+
+.company-data-logo-box,
+.data-list1,
+.data-list2,
+.data-list3,
+.data-list4 {
+  grid-row: 1/2;
+}
+
+.company-data-logo-box {
+  grid-column: 1/2;
+  align-self: center;
+  justify-self: center;
+}
+
+.data-list1 {
+  grid-column: 2/3;
+}
+
+.data-list2 {
+  grid-column: 3/4;
+}
+
+.data-list3 {
+  grid-column: 4/5;
+}
+
+.data-list4 {
+  grid-column: 5/6;
+  align-self: center;
+  justify-self: right;
+}
+
+.company-data-logo-box {
+  margin: 0;
+}
+
+.company-logo {
+  height: 3.5rem;
+}
+
+.data-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  line-height: 2.5;
+}
+
+.data-list1 a,
+.data-list2 a,
+.data-list3 a {
+  text-decoration: none;
+  color: var(--dark-grayish-blue, darkslategray);
+  transition-duration: 0.7s;
+}
+
+.data-list1 a:hover,
+.data-list2 a:hover,
+.data-list3 a:hover {
+  color: var(--strong-cyan, aqua);
+}
+
+.data-list4 {
+  display: flex;
+  justify-content: center;
+}
+
+.data-list4 li {
+  padding: 0 5%;
+}
+
+.data-list4 a {
+  display: block;
+  color: var(--dark-grayish-blue, darkslategray);
+  transition-duration: 0.7s;
+}
+
+ion-icon {
+  position: relative;
+  display: block;
+  height: 2rem;
+  width: 2rem;
+}
+
+.data-list4 a:hover {
+  color: var(--strong-cyan, aqua);
+}
+
+footer {
+  color: var(--grayish-blue, darkgray);
+}
+
+.attribution {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--dark-grayish-blue, darkslategray);
+  text-decoration-color: transparent;
+  transition-duration: 0.7s;
+}
+
+.attribution a:hover {
+  color: var(--light-blue, dodgerblue);
+  text-decoration-color: var(--light-blue, dodgerblue);
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    background-image: url(./images/bg-header-mobile.png);
+  }
+
+  .header-paragraph {
+    padding: 0;
+  }
+
+  .button-style {
+    display: block;
+    width: 100%;
+  }
+
+  .keep-track-container {
+    padding: 0 5%;
+  }
+
+  .keep-track-paragraph {
+    padding: 0;
+  }
+
+  .keep-track-content {
+    margin-top: 4rem;
+    display: block;
+    text-align: center;
+  }
+
+  .search-icloud-history-container {
+    padding: 0;
+    display: block;
+  }
+
+  .keep-track-container section {
+    margin-top: 3rem;
+  }
+
+  .access-anywhere-paragraph1 {
+    padding: 0;
+  }
+
+  .access-anywhere-image-box {
+    padding: 0;
+  }
+
+  .access-anywhere-section {
+    margin-top: 4rem;
+    padding: 0;
+  }
+
+  .blacklists-snippets-sneak-container {
+    display: block;
+  }
+
+  .company-logo-container {
+    display: block;
+  }
+
+  .company-logo-box {
+    margin: 4rem 0;
+  }
+
+  .clipboard-iosmac-paragraph1 {
+    padding: 0;
+  }
+
+  .company-data-container {
+    display: block;
+    text-align: center;
+  }
+
+  .company-data-logo-box {
+    margin-bottom: 1rem;
+  }
+
+  .data-list4 {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .header-container {
+    background-image: url(./images/bg-header-desktop.png);
+  }
+}
